@@ -12,6 +12,7 @@ class Pessoa:
         return (
             f"\nNome: {self.nome}"
             f"\nIdade: {self.idade}"
-            f"\nEndereço: {self.endereco}"
             f"\nSexo: {self.sexo.value}"
+            f"\nEndereço: {self.endereco}"
         )
+            

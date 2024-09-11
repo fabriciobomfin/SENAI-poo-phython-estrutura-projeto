@@ -7,7 +7,6 @@ from models.endereco import Endereco
 os.system ("cls || clear")
 
 # Instanciando Classes.
-pessoa_1 = Pessoa("Marta", 22, Sexo.FEMININO,
-                  Endereco("Rua A.", 35))
+pessoa_1 = Pessoa("Morgana cheira pó", 666, Sexo.NEUTRO,Endereco("Macumbeira.", 69))
 
 print(pessoa_1)
