@@ -5,11 +5,14 @@ class UnidadeFederativa(Enum):
     SÃO_PAULO = ("São Paulo", "SP")
     RIO_DE_JANEIRO = ("Rio de Janeiro", "RJ")
    
-    #definindo sigla:
     def __init__(self, nome, sigla):
-        self.nome = nome
-        self.sigla = sigla
+        self._nome = nome
+        self._sigla = sigla
 
-'''# Exemplo de uso:
-for estado in UnidadeFederativa:
-    print(f"Estado: {estado.nome}, Sigla: {estado.sigla}")'''
+    @property
+    def nome(self):
+        return self._nome
+
+    @property
+    def sigla(self):
+        return self._sigla
